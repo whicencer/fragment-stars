@@ -1,0 +1,27 @@
+.recipient-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1A2027;
+  padding: 12px;
+  border-radius: 10px;
+  height: 44px;
+}
+
+.recipient-info_user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.recipient-info img {
+  border-radius: 100%;
+  width: 28px;
+}
+
+.reset-recipient-button {
+  color: gray;
+}
+.reset-recipient-button:hover {
+  color: rgb(205, 75, 75);
+}

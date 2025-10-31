@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #07090b;
+  height: 100%;
+  color: #fff;
+  padding: 10px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+header {
+  padding-bottom: 32px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+.wrapper {
+  height: 74vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+  max-width: 700px;
+  text-align: center;
+}
+@media screen and (max-width: 560px) {
+  .title {
+    font-size: 2rem;
+  }
+}
+
+.transparentBtn {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.main-button {
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  background-color: #0091ff;
+}
+.main-button:hover {
+  background-color: #0076d0;
+}
+.main-button:disabled {
+  opacity: 0.4;
+}
+.main-button:disabled:hover {
+  opacity: 0.4;
+  background-color: #0091ff;
+}
+
+.gradient-text {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(90deg, #FFC107 0%, #FFEB3B 50%, #FFC107 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
